@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(95, 243, 62);
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    margin: 0 34px;
+    padding: 8px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav-logo{
+    width: 100px;
+}
+.header_nav-items{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.header_nav-item a{
+    color: rgb(132, 4, 132);
+    text-decoration: none;
+    font-size: 20px;
+}
+.header_nav-item a:hover{
+    color:rgb(239, 236, 34);
+    text-decoration: underline;
+}
+/* Main */
+/* Section 1 */
+.hero{
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_text{
+    width: 700px;
+}
+.main_img img{
+    width: 500px;
+}
+.main_text-heading{
+    font-size: 43px;
+    color: #773009;
+}
+
+/* Section 2=>CARD */
+
+.showcase{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.showcase_cards h3{
+    color: #480d16;
+    font-weight: 500;
+    margin-top: 7px;
+}
+.icon{
+    width: 64px;
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 16px;
+}
+.footer_text{
+    text-align: center;
+}
+#r{
+    text-align:center;
+    color: rgba(201, 6, 6, 0.617);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:xxx-large;
+    font-weight:400 ;
+    text-shadow: 2.5px 1.4px;
+}

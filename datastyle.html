@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Submission Record</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 40%;
+      margin: 14px;
+      border-color: rgb(0, 94, 255);
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+    }
+
+    th {
+      color: rgb(255, 255, 0);
+    }
+    td{
+      color: rgb(255, 255, 255);
+    }
+    h1{
+      margin: 14px;
+      font-weight: 400;
+      color: rgb(0, 221, 0);
+    }
+    *{
+      background-color: rgb(0, 0, 0);
+    }
+    .data_style{
+      color: burlywood;
+      font-size: 18px;
+    }
+    .chs{
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+    .chs:hover{
+      color:rgb(237, 230, 221);
+      margin-top: 40px;
+      margin-left: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1><u>Recent Record</u></h1>
+  <table border="4px">
+    <tr>
+      <th>Name</th>
+      <td id="name"> na</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td id="email"></td>
+    </tr>
+    <tr>
+      <th>Date of Birth</th>
+      <td id="date"></td>
+    </tr>
+    <tr>
+      <th>Phone</th>
+      <td id="phone"></td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td id="gender"></td>
+    </tr>
+    <tr>
+      <th>Role</th>
+      <td id="role"></td>
+    </tr>
+    <tr>
+      <th>Feel Valued</th>
+      <td id="feel-valued"></td>
+    </tr>
+    <tr>
+      <th>Satisfaction Level</th>
+      <td id="satisfaction-level"></td>
+    </tr>
+    <tr>
+      <th>Stress Level</th>
+      <td id="stress-level"></td>
+    </tr>
+    <tr>
+      <th>Solicit-opinions</th>
+      <td id="solicitOpinion"></td>
+    </tr>
+  </table>
+
+  <script>
+    let name = localStorage.getItem("Name");
+    let email = localStorage.getItem("email");
+    let date = localStorage.getItem("date");
+    let phone = localStorage.getItem("phone");
+    let gender = localStorage.getItem("Gender");
+    let role = localStorage.getItem("Role");
+    let feelValued = localStorage.getItem("feel valued");
+    let stress = localStorage.getItem("stress");
+    let satisfaction = localStorage.getItem("Satisfaction");
+    let solicitOpinion = localStorage.getItem("solicitOpinion")
+
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("email").innerHTML = email;
+    document.getElementById("date").innerHTML = date;
+    document.getElementById("phone").innerHTML = phone;
+    document.getElementById("gender").innerHTML = gender;
+    document.getElementById("role").innerHTML = role;
+    document.getElementById("feel-valued").innerHTML = feelValued;
+    document.getElementById("satisfaction-level").innerHTML = satisfaction;
+    document.getElementById("stress-level").innerHTML = stress;
+    document.getElementById("solicitOpinion").innerHTML = solicitOpinion;
+  </script>
+  <a href="surveyForm.html" class="data_style"><div class="chs">Click Here to go back to Survey Form</div></a>
+</body>
+</html>
